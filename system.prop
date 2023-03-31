@@ -1,0 +1,18 @@
+# Device
+ro.display.series=Redmi Note 12 5G
+ro.product.board=sunstone
+ro.board.platform=holi
+
+# Security
+vendor.gatekeeper.disable_spu=true
+fbe.metadata.wrappedkey=true
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.filenames_mode=aes-256-cts
+ro.crypto.volume.metadata.method=dm-default-key 
+
+# USB
+ro.adb.secure=0
+sys.usb.controller=4e00000.dwc3
+sys.usb.rndis.func.name=rndis_bam
+sys.usb.rmnet.func.name=rmnet_bam
+persist.sys.isUsbOtgEnabled=true
