@@ -66,6 +66,7 @@ BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_CMDLINE += \
     androidboot.console=ttyMSM0 \
     androidboot.hardware=qcom \
+    androidboot.selinux=permissive \
     androidboot.usbcontroller=4e00000.dwc3 \
     androidboot.memcg=1 \
     cgroup.memory=nokmem,nosocket \
