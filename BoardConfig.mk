@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/sunstone
+DEVICE_PATH := device/xiaomi/miholi
 
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
