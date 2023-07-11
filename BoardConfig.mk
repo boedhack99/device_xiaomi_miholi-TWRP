@@ -25,7 +25,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a75
 
 # Assertation
-TARGET_OTA_ASSERT_DEVICE := sunstone
+TARGET_OTA_ASSERT_DEVICE := moonstone,sunstone
 
 # A/B
 AB_OTA_UPDATER := true
@@ -90,12 +90,12 @@ TARGET_KERNEL_CONFIG := vendor/holi_GKI.config
 TARGET_KERNEL_HEADERS := kernel/xiaomi/sm6375
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6375
 
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/$(PRODUCT_RELEASE_NAME)/dtbo.img
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/$(PRODUCT_RELEASE_NAME)/dtb.img
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/$(PRODUCT_RELEASE_NAME)/kernel
 
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/prebuilt/ramdisk-modules/,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules)
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/prebuilt/$(PRODUCT_RELEASE_NAME)/ramdisk-modules/,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules)
 
 # Metadata
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
@@ -150,6 +150,9 @@ BOARD_VNDK_VERSION := current
 
 # UEFI
 TARGET_USES_UEFI := true
+
+# Variant Script
+PRODUCT_COPY_FILES += $(DEVICE_PATH)/recovery/$(PRODUCT_RELEASE_NAME)/variant-script.sh:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/variant-script.sh
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
