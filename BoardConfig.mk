@@ -151,9 +151,6 @@ BOARD_VNDK_VERSION := current
 # UEFI
 TARGET_USES_UEFI := true
 
-# Variant Script
-PRODUCT_COPY_FILES += $(DEVICE_PATH)/recovery/$(PRODUCT_RELEASE_NAME)/variant-script.sh:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/variant-script.sh
-
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
