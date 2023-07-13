@@ -26,3 +26,7 @@ PRODUCT_MODEL := POCO X5 5G
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.display.series=POCO X5 5G \
+    ro.product.board=moonstone

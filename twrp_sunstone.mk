@@ -26,3 +26,7 @@ PRODUCT_MODEL := Redmi Note 12 5G
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.display.series=Redmi Note 12 5G \
+    ro.product.board=sunstone
