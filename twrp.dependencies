@@ -1,8 +1,0 @@
-[
-  {
-    "remote": "github",
-    "repository": "xiaomi-sm6375-devs/android_kernel_xiaomi_sm6375",
-    "target_path": "kernel/xiaomi/sm6375",
-    "revision": "lineage-20"
-  }
-]
