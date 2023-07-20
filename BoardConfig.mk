@@ -178,6 +178,7 @@ TW_EXCLUDE_APEX := true
 TW_FRAMERATE := 60
 TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko"
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
+TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone4/temp"
 
 ALLOW_MISSING_DEPENDENCIES := true
 
