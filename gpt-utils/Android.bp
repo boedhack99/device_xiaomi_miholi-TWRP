@@ -16,7 +16,7 @@
 
 
 cc_library {
-    name: "libgptutils.sunstone",
+    name: "libgptutils.miholi",
     vendor: true,
     recovery_available: true,
     shared_libs: [
