@@ -1,5 +1,5 @@
 # TWRP device tree for miholi devices ( POCO X5 5G (moonstone) and Redmi Note 12 5G (sunstone))
-This tree is for building TWRP Recovery for the _mikona_ platform: POCO X5 5G / Redmi Note 12 5G
+This tree is for building TWRP Recovery for the _miholi_ platform: POCO X5 5G / Redmi Note 12 5G
 
 The POCO X5 5G (codenamed _"moonstone"_), Redmi Note 12 5G (codenamed _"sunstone"_) are mid range smartphones from Xiaomi.
 
